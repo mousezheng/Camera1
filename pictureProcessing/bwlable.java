@@ -22,10 +22,10 @@ package com.pictureProcessing;
 
 public class bwlable {
 	
-	int image[][];
+	static int image[][];
 //	BufferedImage grayImage;
 //	BufferedImage colorImage;
-	int counter=1;
+	static int counter=1;
 	
 	public bwlable(int[][] grayImageData) {
 		// TODO Auto-generated constructor stub
@@ -52,13 +52,13 @@ public class bwlable {
 	}
 
 	
-	private void dealBwlabe(int i, int j) {
+	private static void dealBwlabe(int i, int j) {
 		// TODO Auto-generated method stub
 		//ÉÏ
-		if (image[i-1][j] == 1) {
-			image[i-1][j] = counter;
-			dealBwlabe(i-1, j);
-		}
+//		if (image[i-1][j] == 1) {
+//			image[i-1][j] = counter;
+//			dealBwlabe(i-1, j);
+//		}
 		//×ó
 		if (image[i][j-1] == 1) {
 			image[i][j-1] = counter;

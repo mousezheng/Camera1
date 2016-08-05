@@ -118,7 +118,7 @@ public class imfll {
 			}//for (int j = 0; j < imageColor[1].length; j++)
 		}//for (int i = 0; i < imageColor.length; i++)
 		
-	
+		imageColor = null;
 		
 		
 	}

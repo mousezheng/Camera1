@@ -44,7 +44,8 @@ public class imerode {
 		int[][] origin = getCircle(Circle);
 		imerodeImage(origin,imageGray,Circle);
 		
-		
+		imageGray = null;
+		origin = null;
 //		BufferedImage testImage = new BufferedImage(origin.length,
 //													origin[0].length,
 //													grayImage.getType());

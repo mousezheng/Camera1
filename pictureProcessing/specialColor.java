@@ -55,6 +55,11 @@ public class specialColor {
 //		bufferedImage = ImageIO.read(new File(file));
 		imageGray = new int[inImage.length][inImage[0].length];
 		processPicture();
+		
+		//ÊÍ·ÅÄÚ´æ
+		imageBitmap = null;
+		inImage = null;
+		imageData = null;
 	}
 	private static int colorToRGB(int red, int green, int blue) {
 

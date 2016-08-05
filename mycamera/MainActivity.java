@@ -10,13 +10,14 @@ import java.util.Date;
 //import java.util.TimerTask;
 
 
-import com.mycamera.R;
 
+import com.mycamera.R;
 import com.pictureProcessing.*;
 
 //import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
+import android.app.ActivityManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.ImageFormat;
@@ -235,10 +236,11 @@ public class MainActivity extends ActionBarActivity implements SurfaceHolder.Cal
                 Toast.LENGTH_SHORT).show();  
 		mSpecialColor = new specialColor(imageData); 						//(1)
 		imageGray =  mSpecialColor.getImageGray();
-		mImerode = new imerode(imageGray,5);      		  	//(2)
+		mImerode = new imerode(imageGray,10);      		  	//(2)
 		imageGray = mImerode.getImageGray();
-		mImfll = new imfll(imageGray,40);					//(3)
+		mImfll = new imfll(imageGray,30);					//(3)
 		imageGray = mImfll.getImageGray();
+		
 		bwlable mBwlable = new bwlable(imageGray);			//(4)
 		Toast.makeText(getApplicationContext(), mBwlable.getCounter()+"",  
                 Toast.LENGTH_SHORT).show();  
